@@ -6,7 +6,7 @@ def starts_with_a_vowel?(word)
   end
 end
 
-def words_five_letters_long(text)
+def words_five_letters_long?(text)
   text.scan(/\b\w(5)\b/)
 end
 
