@@ -2,26 +2,26 @@ def starts_with_a_vowel?(word)
   if word.match(/\A[aeiou]/i) == nil 
     return false 
   else 
-    return true
+    return true 
   end
 end
 
-def words_five_letters_long?(text)
+def words_five_letters_long(text)
   text.scan(/\b\w(5)\b/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text.match(/^[A-Z].*\$/) == nil 
-    return true
+    return false
   else
-    return false 
+    return true 
   end
 end
 
 def valid_phone_number?(phone)
   if phone.match(/\(?([0-9]{3})\)?([-]?)([0-9]{3})([-]?)([0-9]{4})/) == nil 
-    return true
-  else 
     return false
+  else 
+    return true
   end
 end
